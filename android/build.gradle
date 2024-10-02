@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 
 android {
-  namespace "game.Cook"
+  namespace "restaurantgame.Cook"
   compileSdk 34
   sourceSets {
     main {
@@ -24,7 +24,7 @@ android {
 		}
   }
   defaultConfig {
-    applicationId 'game.Cook'
+    applicationId 'restaurantgame.Cook'
     minSdkVersion 19
     targetSdkVersion 34
     versionCode 1
@@ -113,7 +113,7 @@ tasks.register('run', Exec) {
   }
 
   def adb = path + "/platform-tools/adb"
-  commandLine "$adb", 'shell', 'am', 'start', '-n', 'game.Cook/game.Cook.android.AndroidLauncher'
+  commandLine "$adb", 'shell', 'am', 'start', '-n', 'restaurantgame.Cook/restaurantgame.Cook.android.AndroidLauncher'
 }
 
 eclipse.project.name = appName + "-android"

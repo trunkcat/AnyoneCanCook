@@ -14,7 +14,7 @@
  */
 //Note, the above license and copyright applies to this file only.
 
-package game.Cook.lwjgl3;
+package restaurantgame.Cook.lwjgl3;
 
 import org.lwjgl.system.macosx.LibC;
 
